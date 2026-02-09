@@ -1,0 +1,21 @@
+.receipt-container {
+  display: flex;
+  justify-content: center;
+}
+
+.receipt-card {
+  background: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.receipt-card h2 {
+  font-weight: bold;
+}
+
+.receipt-card hr {
+  margin: 15px 0;
+}

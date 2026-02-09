@@ -1,0 +1,35 @@
+.payment-page {
+  max-width: 500px;
+}
+
+.payment-card {
+  background: #161a20;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  color: #e5e7eb;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #9ca3af;
+}
+
+.payment-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  color: #34d399;
+}
+
+.btn-success {
+  background-color: #10b981;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #059669;
+}

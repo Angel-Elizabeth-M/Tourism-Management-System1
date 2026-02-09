@@ -1,0 +1,186 @@
+/* ===============================
+   GLOBAL
+================================ */
+body {
+  background-color: #f4f5f7;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.package-hero {
+  background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
+    center / cover no-repeat;
+  padding: 40px;
+  border-radius: 20px;
+  color: #ffffff;
+  margin-bottom: 35px;
+  position: relative;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+.package-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.package-hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.package-hero h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.package-hero p {
+  max-width: 720px;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #e5e7eb;
+}
+
+
+/* ===============================
+   DETAIL / MENU CARDS
+   (Transportation, Accommodation,
+    Sightseeing, Meals, etc.)
+================================ */
+.detail-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+/* 🔥 BLACK SHADOW HOVER EFFECT */
+.detail-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.detail-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.detail-card ul,
+.detail-card ol {
+  padding-left: 20px;
+  margin: 0;
+  color: #444;
+}
+
+.itinerary-card ol li {
+  margin-bottom: 6px;
+}
+
+/* ===============================
+   HOTEL CARDS (UNCHANGED STYLE)
+================================ */
+.hotel-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-image {
+  position: relative;
+  height: 190px;
+}
+
+.hotel-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotel-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #ffffff;
+  color: #333;
+  padding: 5px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.hotel-card h6 {
+  font-weight: 600;
+  color: #222;
+}
+
+.hotel-price {
+  font-size: 21px;
+  font-weight: 700;
+  color: #1b7f5a;
+  margin: 8px 0;
+}
+
+.hotel-price span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.btn-primary {
+  background-color: #1b7f5a;
+  border: none;
+  box-shadow: 0 6px 15px rgba(27, 127, 90, 0.35);
+}
+
+.btn-primary:hover {
+  background-color: #156947;
+}
+
+.btn-outline-secondary {
+  border-color: #bbb;
+  color: #444;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #f1f1f1;
+}
+
+/* ===============================
+   HEADINGS
+================================ */
+h4 {
+  font-weight: 700;
+  color: #222;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .package-hero h2 {
+    font-size: 22px;
+  }
+
+  .hotel-image {
+    height: 160px;
+  }
+}
